@@ -132,10 +132,12 @@ article p {
   line-height: 24px;
 }
 article code {
-  background-color: rgba(27,31,35,0.05);
-  border-radius: 10px;
+  background-color: rgba(144,144,255,0.15);
+  color: #9090ff;
+  border-radius: 6px;
   font-size: 85%;
   padding: 0.2em 0.4em;
+  margin: 0 0.2em;
 }
 article code::-webkit-scrollbar {
   width: 10px;
@@ -1416,7 +1418,7 @@ photos img {
 }
 .nexmoe-rainbow-fill a:nth-child(7n+1) {
   color: #fff;
-  background-color: rgba(144,144,255,0.9);
+  background-color: rgba(144,144,255,0.7);
 }
 .nexmoe-rainbow-fill a:nth-child(7n+2) {
   color: #fff;
