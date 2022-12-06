@@ -67,6 +67,9 @@
 .gt-container .gt-version {
   color: #ada59b !important;
 }
+.gt-comment-body .markdown-body {
+  color: #c8c3bc !important;
+}
 .gitment-comments-error {
   color: #c8c3bc;
 }
