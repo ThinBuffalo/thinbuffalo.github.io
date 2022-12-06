@@ -57,7 +57,7 @@ function render(data) {
 }
 
 // 主程序
-let key = decodeURI(location.search.split('?q=')[1]);
+let key = decodeURI(location.search.split('q=')[1]);
 if (key !== undefined && key !== 'undefined') {
     document.getElementsByClassName('search-input')[0].value = key;
     loadData(format(key));
@@ -76,5 +76,5 @@ function sinput() {
 
 // 搜索词格式化
 function format(word) {
-    return word.replace(/[ ]/g, '').split(' ');
+    return word.split(' ');
 }
