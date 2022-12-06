@@ -29,18 +29,18 @@
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1670265172762">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1670303900853">
     
-    <link rel="stylesheet" href="/css/style.css?v=1670265172762">
+    <link rel="stylesheet" href="/css/style.css?v=1670303900853">
 
     
         
-            <link rel="stylesheet" href="/custom.css?v=1670265172763">
+            <link rel="stylesheet" href="/custom.css?v=1670303900853">
         
     
 
     
-        <link rel="stylesheet" href="/css/dark.css?v=1670265172763">
+        <link rel="stylesheet" href="/css/dark.css?v=1670303900854">
      
 <meta name="generator" content="Hexo 6.3.0"></head>
 
@@ -117,7 +117,7 @@
 </div>
 
 
-	<script async src="/js/search.js?v=1670265172765"></script>
+	<script async src="/js/search.js?v=1670303900856"></script>
 
 
 
@@ -169,6 +169,94 @@
 </div>
 
     
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/动态/">动态</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Dark-nexmoe/" style="font-size: 10px;">Dark-nexmoe</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(1);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">最新文章</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="/categories/%E5%8A%A8%E6%80%81/221201/">新的开始</a>
+          </li>
+        
+          <li>
+            <a href="/categories/%E5%8A%A8%E6%80%81/210602/">目击Github服务器宕机</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
 </aside>
     <div class="nexmoe-copyright">
         &copy; 2022 Thin Buffalo
@@ -190,7 +278,8 @@
 	</article>
 	
         <div class="nexmoe-post-footer">
-            请在你的配置文件中设置评论框插槽
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"> <div id="gitalk"></div> <script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script> <script type="text/javascript"> var gitalk = new Gitalk({ clientID: "e093bd6684b5846e879f", clientSecret: "8e9e41dbacfad9b3361d4336791f82cb4ce2448a", id: window.location.pathname, repo: "blogfile", owner: "ThinBuffalo", admin: ["ThinBuffalo"] });
+gitalk.render("gitalk"); </script>
         </div>
     
 </div>
@@ -243,7 +332,7 @@
 
  
 
-<script async src="/js/app.js?v=1670265172772"></script>
+<script async src="/js/app.js?v=1670303900865"></script>
 
 
 
