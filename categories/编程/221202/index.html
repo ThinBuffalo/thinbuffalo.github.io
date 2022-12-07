@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    
+    <title>浅谈Nexdark主题的本心 - 枫叶落下的小岛</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
+    <link rel="shortcut icon" href="https://i.imgtg.com/2022/12/05/Dkrks.png" type="image/png" />
+    <meta name="description" content="本来觉得合并Nexmoe最新版本挺麻烦的，但是也没想到这么快就搞好了，所以就尽快地发布了Nexdark v0.1.0。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅谈Nexdark主题的本心">
+<meta property="og:url" content="https://thinbuffalo.github.io/categories/%E7%BC%96%E7%A8%8B/221202/index.html">
+<meta property="og:site_name" content="枫叶落下的小岛">
+<meta property="og:description" content="本来觉得合并Nexmoe最新版本挺麻烦的，但是也没想到这么快就搞好了，所以就尽快地发布了Nexdark v0.1.0。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.imgtg.com/2022/12/06/DFv5I.jpg">
+<meta property="article:published_time" content="2022-12-07T06:46:03.000Z">
+<meta property="article:modified_time" content="2022-12-07T06:50:43.819Z">
+<meta property="article:author" content="Thin Buffalo">
+<meta property="article:tag" content="Nexdark">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgtg.com/2022/12/06/DFv5I.jpg">
+    
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+
+
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1670396478636">
+    
+    <link rel="stylesheet" href="/css/style.css?v=1670396478636">
+
+    
+        
+            <link rel="stylesheet" href="/custom.css?v=1670396478636">
+        
+    
+
+    
+        <link rel="stylesheet" href="/css/dark.css?v=1670396478636">
+     
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="mdui-drawer-body-left">
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://lib.xiaoshuapp.com/wall?type=acg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="Thin Buffalo" class="mdui-btn mdui-btn-icon"><img src="https://i.imgtg.com/2022/12/05/DkApK.jpg" alt="Thin Buffalo"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Thin Buffalo">
+            <img src="https://i.imgtg.com/2022/12/05/DkApK.jpg" alt="Thin Buffalo" alt="Thin Buffalo">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>3</div>
+        <div><span>标签</span>1</div>
+        <div><span>分类</span>2</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archives.html" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="关于作者">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于作者
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        
+            <form id="search_form">
+                <label><input class="st-default-search-input" id="search_value" name="q" type="search" placeholder="搜索" style="
+                    font-size: 15px !important;
+                    height: 56px !important;
+                    background-image: none;
+                "></label>
+            </form>
+        
+    </div>
+</div>
+
+
+	<script async src="/js/search.js?v=1670396478637"></script>
+
+
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="https://user.qzone.qq.com/14491504"
+			target="_blank"
+			mdui-tooltip="{content: 'QQ'}"
+			style="
+				color: rgb(249, 174, 8);
+				background-color: rgba(249, 174, 8, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-QQ"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/513277979"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .15);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://github.com/ThinBuffalo"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(217, 214, 209);
+				background-color: rgba(0, 0, 0, 0);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/动态/">动态</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/编程/">编程</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Nexdark/" style="font-size: 10px;">Nexdark</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(1);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">最新文章</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="/categories/%E7%BC%96%E7%A8%8B/221202/">浅谈Nexdark主题的本心</a>
+          </li>
+        
+          <li>
+            <a href="/categories/%E5%8A%A8%E6%80%81/221201/">新的开始</a>
+          </li>
+        
+          <li>
+            <a href="/categories/%E5%8A%A8%E6%80%81/210602/">目击Github服务器宕机</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 Thin Buffalo
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/ThinBuffalo/hexo-theme-nexdark" target="_blank">Nexdark</a>
+        
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+    
+        <div class="nexmoe-post-cover"> 
+            <img src="https://lib.xiaoshuapp.com/wall?type=acg" alt="浅谈Nexdark主题的本心" loading="lazy">
+            <h1>浅谈Nexdark主题的本心</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2022年12月07日</a>
+        
+            <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a>
+        
+        
+    <a><i class="nexmoefont icon-areachart"></i>约1.9k字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要6分钟</a>
+
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <p>本来觉得合并Nexmoe最新版本挺麻烦的，但是也没想到这么快就搞好了，所以就尽快地发布了<a target="_blank" rel="noopener" href="https://github.com/ThinBuffalo/hexo-theme-nexdark/releases/tag/v0.1.0">Nexdark v0.1.0</a>。</p>
+<span id="more"></span>
+
+<h2 id="第一版：Dark-Nexmoe"><a href="#第一版：Dark-Nexmoe" class="headerlink" title="第一版：Dark Nexmoe"></a>第一版：Dark Nexmoe</h2><p>Nexdark主题的前身是Dark Nexmoe主题。把大佬的repo叉过来二创最开始的目的，在这俩主题的名字中已经体现的差不多了。我的本意是想做一个Nexmoe的暗色主题ver，Dark Nexmoe也的确是这么做出来的。</p>
+<p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://i.imgtg.com/2022/12/06/DFv5I.jpg" alt="ver.1 这张图里文章的背景图好像是沃玛和山山！" data-caption="ver.1 这张图里文章的背景图好像是沃玛和山山！" loading="lazy"></p>
+<p>当时的Dark Nexmoe只实现了暗色主题一个功能，考虑到原主题的红色主配色并不适合暗色主题，Dark Nexmoe将原主题的彩虹配色，即赤橙黄绿青蓝紫颠倒了过来，也就是紫蓝青绿黄橙红。这在无意之间也为之后自定义主题配色的功能埋了伏笔。</p>
+<p>暗色主题是直接抄的浏览器插件Dark Reader渲染过后的样式，现在主题<code>css</code>文件夹里实现暗色主题功能的文件<code>dark.styl</code>里都还写着这样一行注释：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 建议使用Chrome插件Dark Reader辅助适配暗色主题</span><br></code></pre></td></tr></table></figure>
+
+<p>这样的工作并不复杂但是量也不算小，以至于在后续的几个版本甚至包括下文中的第二版里都还发现了一些没有适配暗色主题的地方。（所以现在仍然有可能存在暗色主题适配问题，如果发现敬请提出issue，我可能会随缘修补）当时的主题颜色和暗色主题适配是直接在主样式<code>style.styl</code>文件中修改的，也就看得出来我根本没有想过合并主库什么的，同时也为之后得工作加重了负担。</p>
+<h2 id="第二版：Pull-Request-151-154"><a href="#第二版：Pull-Request-151-154" class="headerlink" title="第二版：Pull Request #151-154"></a>第二版：Pull Request #151-154</h2><p>后来，作为一位Nexmoe主题的用户，我感受到Nexmoe主题虽然功能体验很不错，但是距离一个功能完备的主题还有很大距离，所以一打鸡血，决定为主库提供一次功能更新。</p>
+<h3 id="暗色主题与自定义主题配色"><a href="#暗色主题与自定义主题配色" class="headerlink" title="暗色主题与自定义主题配色"></a>暗色主题与自定义主题配色</h3><p>我干的第一件事首先就是把Dark Nexmoe的暗色主题作为独立板块迁移到主库上，接着因为要满足暗色主题的配色需求，我实现了自定义主题颜色的功能。</p>
+<h3 id="终端检测与提示"><a href="#终端检测与提示" class="headerlink" title="终端检测与提示"></a>终端检测与提示</h3><p>在之前我提交过一个<a target="_blank" rel="noopener" href="https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues/131">#131</a>问题，并在问题中提出了一个并不完整的解决方案（当时我说话的语气真的好吓人，在这里给折影轻梦大大道个歉⊙﹏⊙∥）。后来作者也处理过这个问题，当时好像效果不好。后来我意识到是主题文件夹中的配置文件<code>_config.yml</code>干扰了编译，所以提出的解决方案是，把<code>_config.yml</code>移至<code>source</code>文件夹内，同时为防止网站没有个人配置文件运行出错，再自动在网站根目录下复制一份个人配置文件。</p>
+<p>当时作者已经实现了在初次下载或更新版本时，会新建一个<code>_config.new.yml</code>以方便用户编辑或更新个人配置文件。在此基础上，我为了解决上面的问题，写了<code>index.js</code>。在每次运行hexo时，脚本都会自动运行，检测用户有没有个人配置文件，如果没有就复制一份。脚本运行时会在终端提示，所以平时在终端里看见的</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript"><span class="hljs-string">[Nexmoe]</span> Checking theme configurations<br></code></pre></td></tr></table></figure>
+<p>就是由这个实现的。</p>
+<h3 id="本地搜索"><a href="#本地搜索" class="headerlink" title="本地搜索"></a>本地搜索</h3><p>本地搜索也算是我当时觉得的Nexmoe“与功能完备的主题的差距”之一，Swiftype搜索因为要收费也不能完全满足用户对内置搜索的需求，当时也有Fork的项目实现了本地搜索但是个人觉得不是很满意。所以查了一点资料就自己整了一个比较简单的。</p>
+<h3 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h3><p>有看见过其他主题在配置文件里高度自定义主题什么的，比如说自定义字体，看了之后觉得很麻烦，又看到大多数改字体啊之类的都是直接把样式导进主题样式文件，但是这样对用<code>npm</code>下载主题的用户来说太不友好了。所以我就实现了导入自定义样式，在网站<code>source</code>文件夹下可以创建<code>custom.css</code>编写自定义的样式，我的网站字体适配就是这样完成的。</p>
+<p>在下文第三版的更新中，这个功能也稍做了改进，现在支持导入多文件，只用在配置文件中注册一下就行了。</p>
+<p>这个功能如上所说，是为了解决使用<code>npm</code>渠道下载的主题或防止少量固定样式被主题更新误覆盖，简化更新步骤而开发的。也是我觉得一个虽然功能及其实现很简单但是比较有创意的一个解决方案。</p>
+<blockquote>
+<p>小插曲：</p>
+<p>当时我是第一次提交PR，没有经验教训。每次都是提交完了发现有Bug。所以来来回回一共交了<strong>四次</strong>PR，在此再次给作者道歉。</p>
+</blockquote>
+<p>总的来讲，这一次合并请求的更新对Dark Nexmoe项目的意义很大，也可以说是 <strong>“真正给予了它生命”</strong>。</p>
+<h3 id="局限之处"><a href="#局限之处" class="headerlink" title="局限之处"></a>局限之处</h3><p>当时的更新更的功能比较多，算是功能大更新，但是对于原库来说，这么多的更改也可以说是功能的“换血”，对原库的破坏也很大。再加上某些内容因为作者并不了解细节所以不方便维护，所以后来都被砍掉了。比如暗色主题适配与自定义主题颜色。而且我的代码写的太乱，这是原先颜色配置功能的部分配置片段：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">color:</span> <span class="hljs-comment"># 配色方案，从first到seventh为优先级为1-7的颜色，默认为彩虹配色</span><br>  <span class="hljs-attr">first:</span> <span class="hljs-comment"># 同时作为主题色</span><br>    <span class="hljs-attr">r:</span> <span class="hljs-number">144</span><br>    <span class="hljs-attr">g:</span> <span class="hljs-number">144</span><br>    <span class="hljs-attr">b:</span> <span class="hljs-number">255</span><br>  <span class="hljs-attr">second:</span><br>    <span class="hljs-attr">r:</span> <span class="hljs-number">26</span><br>    <span class="hljs-attr">g:</span> <span class="hljs-number">152</span><br>    <span class="hljs-attr">b:</span> <span class="hljs-number">255</span><br><span class="hljs-string">···</span><br></code></pre></td></tr></table></figure>
+<p>可以说是相当不美观不方便。</p>
+<p>某些新增功能也有很多Bug，比如本地搜索。本地搜索作为我找文档搭起来的一个小功能，有很多地方没考虑到，比如说之前的版本当关键词出现在标题上而没有在正文上时，正文内容不会被裁剪，抑或是某些字符在搜索时无法被正确转义……</p>
+<p>至于这些缺点的修补或维护，就要到下一版再说了。</p>
+<h2 id="第三版：Nexdark"><a href="#第三版：Nexdark" class="headerlink" title="第三版：Nexdark"></a>第三版：Nexdark</h2><p>在完成了合并请求之后，我就没有再管过自己存储库的事，直到Vercel被墙，重新构建博客的过程中，我发现一些功能被主库删除了<a href="/categories/%E5%8A%A8%E6%80%81/221201/">^1</a>。所以我还是觉得自己有必要重新维护这个项目了。</p>
+<p>过程还是比较顺利的，没有想到原来的暗色主题对新版本的适配度这样高。本地搜索也修复了正文内容不裁剪的问题。至于多个匹配词搜索时搜索结果可能混乱，或是在文章页面搜索时搜索界面可能不显示这些小问题，考虑到本地搜索主要走轻量路线，也就暂时没有计划进行修复。</p>
+
+    
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>Thin Buffalo<br>
+        <strong>本文链接：</strong><a href="https://thinbuffalo.github.io/categories/%E7%BC%96%E7%A8%8B/221202/" title="https:&#x2F;&#x2F;thinbuffalo.github.io&#x2F;categories&#x2F;%E7%BC%96%E7%A8%8B&#x2F;221202&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;thinbuffalo.github.io&#x2F;categories&#x2F;%E7%BC%96%E7%A8%8B&#x2F;221202&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Nexdark/" rel="tag">Nexdark</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"> <div id="gitalk"></div> <script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script> <script type="text/javascript"> var gitalk = new Gitalk({ clientID: "e093bd6684b5846e879f", clientSecret: "8e9e41dbacfad9b3361d4336791f82cb4ce2448a", id: window.location.pathname, repo: "blogfile", owner: "ThinBuffalo", admin: ["ThinBuffalo"] });
+gitalk.render("gitalk"); </script> <style> .gt-container .gt-comment-body { color: rgb(200, 195, 188) !important; } </style>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                        
+                          
+                          
+                              <button class="mdui-fab catalog" style="overflow:unset;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%89%88%EF%BC%9ADark-Nexmoe"><span class="toc-number">1.</span> <span class="toc-text">第一版：Dark Nexmoe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%89%88%EF%BC%9APull-Request-151-154"><span class="toc-number">2.</span> <span class="toc-text">第二版：Pull Request #151-154</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9A%97%E8%89%B2%E4%B8%BB%E9%A2%98%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98%E9%85%8D%E8%89%B2"><span class="toc-number">2.1.</span> <span class="toc-text">暗色主题与自定义主题配色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%8F%90%E7%A4%BA"><span class="toc-number">2.2.</span> <span class="toc-text">终端检测与提示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2"><span class="toc-number">2.3.</span> <span class="toc-text">本地搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.4.</span> <span class="toc-text">自定义样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%80%E9%99%90%E4%B9%8B%E5%A4%84"><span class="toc-number">2.5.</span> <span class="toc-text">局限之处</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%89%88%EF%BC%9ANexdark"><span class="toc-number">3.</span> <span class="toc-text">第三版：Nexdark</span></a></li></ol>
+                                  </div>
+                              </button>
+                          
+                          
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-search-space">
+	<div class="search-container">
+		<div class="search-header">
+			<div class="search-input-container">
+				<input
+					class="search-input"
+					type="text"
+					placeholder="搜索"
+					oninput="sinput();"
+				/>
+			</div>
+			<a class="search-close" onclick="sclose();">×</a>
+		</div>
+		<div class="search-body"></div>
+	</div>
+</div>
+
+    
+<script src="/lib/mdui_043tiny/mdui.js"></script>
+<script src="/lib/fancybox/fancybox.umd.js"></script>
+
+
+ 
+
+<script async src="/js/app.js?v=1670396478647"></script>
+
+
+
+</body>
+
+</html>
